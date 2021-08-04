@@ -25,7 +25,12 @@ const AllMeetUpsPage = () => {
       <h1>All Meet Ups!</h1>
       <ul>
         {DUMMY_DATA.map((meetup) => {
-          return <li key={meetup.id}>{meetup.title}</li>;
+          return (
+            <div>
+              <li key={meetup.id}>{meetup.title}</li>
+              <li key={meetup.title}>{meetup.image}</li>
+            </div>
+          );
         })}
       </ul>
     </div>
