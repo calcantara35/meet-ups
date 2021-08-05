@@ -28,7 +28,6 @@ const AllMeetUpsPage = () => {
           return (
             <div>
               <li key={meetup.id}>{meetup.title}</li>
-              <li key={meetup.title}>{meetup.image}</li>
             </div>
           );
         })}
